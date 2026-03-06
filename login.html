@@ -1,11 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title & Icon  -->
+    <title>English Janala</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- daisyUI CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Login Section -->
+    <section>
+      <div
+        class="bg-[#BADEFF] h-screen flex flex-col items-center justify-center"
+      >
+        <div class="">
+          <a class="flex items-center text-xl mb-5">
+            <span class="font-semibold text-4xl leading-7">English</span>
+            <img class="w-20 h-20" src="./assets/logo.png" alt="" srcset="" />
+            <span class="font_bangla font-semibold text-4xl leading-7"
+              >জানালা</span
+            >
+          </a>
+        </div>
+
+        <div class="mt-7">
+          <fieldset class="fieldset w-xs flex flex-col items-center">
+            <input
+              id="login_input"
+              maxlength="100"
+              minlength="30"
+              type="text"
+              class="input"
+              placeholder="Enter Your Name"
+            />            
+            <p class="label mb-5 text-[16px] mt-1">Username : admin</p>
+
+            <input
+              id="login_password"
+              maxlength="20"
+              minlength="8"
+              type="password"
+              class="input"
+              placeholder="Password"
+            />
+            <p class="label text-[16px] mt-1">Password : 12345678</p>
+
+            <button
+              id="login_btn"
+              class="btn btn-primary w-full text-[#E0E7FF] mt-5 text-[22px]"
+            >
+              Login
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/login.js"></script>
+  </body>
 </html>
