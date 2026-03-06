@@ -8,7 +8,7 @@ const loadLevels = () => {
 }
 
 const displayLevel = (lessons) => {
-    const level_container = document.getElementById('level_container')
+    const level_container = document.getElementById('button_container')
     level_container.innerHTML = '';
 
     lessons.forEach(lesson => {
@@ -33,7 +33,6 @@ const loadLevelWord = (level_no) => {
 
 const displayLevelWord = (words) => {
     const level_container = document.getElementById('level_container')
-    level_container.innerHTML = '';
 
     words.forEach(word => {
         const div = document.createElement('div');
@@ -58,7 +57,7 @@ const displayLevelWord = (words) => {
           </div>
         </div>
             `;
-        word_container.appendChild(div);
+        level_container.appendChild(div);
     });
 }
 loadLevels()
