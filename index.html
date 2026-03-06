@@ -71,13 +71,13 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a href="" class="">
+                <a href="#faq" class="">
                   <i class="fa-solid fa-circle-question"></i>
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="" class="">
+                <a href="#learn" class="">
                   <i class="fa-solid fa-book-open"></i>
                   Learn
                 </a>
@@ -90,7 +90,7 @@
               </li>
             </ul>
           </div>
-          <a class="flex items-center text-xl">
+          <a href="#" class="flex items-center text-xl">
             <span class="font-semibold leading-7">English</span>
             <img class="w-10 h-10" src="./assets/logo.png" alt="" srcset="" />
             <span class="font_bangla font-semibold">জানালা</span>
@@ -99,13 +99,13 @@
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal px-1 gap-4">
             <li>
-              <a href="" class="btn btn-primary btn-outline">
+              <a href="#faq" class="btn btn-primary btn-outline">
                 <i class="fa-solid fa-circle-question"></i>
                 FAQ
               </a>
             </li>
             <li>
-              <a href="" class="btn btn-primary btn-outline">
+              <a href="#learn" class="btn btn-primary btn-outline">
                 <i class="fa-solid fa-book-open"></i>
                 Learn
               </a>
@@ -156,7 +156,7 @@
     <!-- Banner Section End -->
 
     <!-- Learn Section Start -->
-    <section>
+    <section id="learn">
       <div class="mx-auto text-center mt-12 lg:mt-40">
         <h1 class="text-4xl font-bold text-[#18181B] leading-10">
           <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
@@ -223,7 +223,9 @@
       <div
         id="word_container"
         class="bg-[#F8F8F8] w-11/12 mx-auto rounded-3xl flex flex-wrap gap-7 p-6 hidden"
-      ></div>
+      >
+    
+    </div>
     </section>
     <!-- Word Section End -->
 
@@ -236,8 +238,8 @@
     <!-- Dialog Lesson Section End -->
 
     <!-- FAQ Section Start -->
-    <section>
-      <div class="mx-auto text-center w-11/12 pt-40 pb-24">
+    <section id="faq" class="mb-44">
+      <div class="mx-auto text-center w-11/12 pt-40 pb-20">
         <h1 class="text-4xl font-bold text-[#18181B] leading-10 pt-6">
           <span class="text-[#00BCFF]">Frequently</span> Asked Questions
         </h1>
@@ -321,6 +323,30 @@
       </div>
     </section>
     <!-- FAQ Section End -->
+
+    <!-- Footer Section Start -->
+     <footer class="border-t border-[#FFEBEB]">
+      <div class="mx-auto w-11/12 flex justify-between p-[100px] ">
+        <div class="">
+          <a class="flex items-center text-xl mb-5">
+            <span class="font-semibold text-xl leading-7">English</span>
+            <img class="w-10 h-10" src="./assets/logo.png" alt="" srcset="" />
+            <span class="font_bangla font-semibold text-xl leading-7">জানালা</span>
+          </a>
+          <p class="font_bangla font-medium text-lg leading-7 text-[#000000] mb-2">ইংরেজি শিখুন সহজে</p>
+          <p class="font_bangla leading-7 text-[#000000]">Providing ED-Tech Applications since 2025</p>
+        </div>
+        <div class="flex flex-col gap-3 justify-end">  
+          <p>Follow us</p>
+          <div class="">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+     </footer>
+    <!-- Footer Section End -->
 
     <script src="./scripts/script.js"></script>
   </body>
