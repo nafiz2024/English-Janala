@@ -7,7 +7,7 @@ document.getElementById("login_btn").addEventListener("click", function () {
     console.log(pinValue);
 
     if (nameValue === "admin" && pinValue === "12345678") {
-        window.location.assign("index.html");
+        window.location.assign("home.html");
     } else {
         alert("Invalid username or password. Please try again.");
     }
