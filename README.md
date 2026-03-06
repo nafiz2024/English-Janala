@@ -89,12 +89,15 @@ English-Janala
 ## 📸 Screenshots
 
 ### 🔐 Login Page
+
 <img src="./Readme Image/Login Page.png">
 
 ### 📚 Lesson Section
+
 <img src="./Readme Image/Lesson Word.png">
 
 ### 📖 Word Details Modal
+
 <img src="./Readme Image/Word Details.png">
 
 ---
@@ -105,8 +108,17 @@ This project uses the Programming Hero public API.
 
 ```
 - https://openapi.programming-hero.com/api/levels/all
+```
+
+```
 - https://openapi.programming-hero.com/api/level/1
+```
+
+```
 - https://openapi.programming-hero.com/api/word/1
+```
+
+```
 - https://openapi.programming-hero.com/api/words/all
 ```
 
