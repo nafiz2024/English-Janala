@@ -8,7 +8,7 @@ const loadLevels = () => {
 }
 
 const displayLevel = (lessons) => {
-    const level_container = document.getElementById('button_container')
+    const level_container = document.getElementById('level_container')
     level_container.innerHTML = '';
 
     lessons.forEach(lesson => {
@@ -28,11 +28,28 @@ const loadLevelWord = (level_no) => {
     fetch(url)
         .then(response => response.json())
         .then(json => displayLevelWord(json.data))
+    
+    const empty_container = document.getElementById('empty_container');
+    const word_container = document.getElementById('word_container');
+    
+    empty_container.classList.add('hidden');
+    word_container.classList.remove('hidden');
 };
 
 
 const displayLevelWord = (words) => {
-    const level_container = document.getElementById('level_container')
+    const word_container = document.getElementById('word_container');
+    word_container.innerHTML = '';
+
+    if(words.length === 0){
+        const empty_container = document.getElementById('empty_container');
+        const empty_lesson_container = document.getElementById('empty_lesson_container');
+        const word_container = document.getElementById('word_container');
+
+        empty_container.classList.add('hidden');
+        word_container.classList.add('hidden');
+        empty_lesson_container.classList.remove('hidden');
+    }
 
     words.forEach(word => {
         const div = document.createElement('div');
@@ -57,7 +74,7 @@ const displayLevelWord = (words) => {
           </div>
         </div>
             `;
-        level_container.appendChild(div);
+        word_container.appendChild(div);
     });
 }
 loadLevels()

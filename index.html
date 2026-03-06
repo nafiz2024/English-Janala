@@ -163,15 +163,15 @@
         </h1>
 
         <div
-          id="button_container"
+          id="level_container"
           class="flex flex-wrap mx-auto justify-center gap-5 py-10 px-4"
         ></div>
       </div>
     </section>
     <!-- Learn Section End -->
 
-    <!-- Word Section Start -->
-    <section id="word_container" class="hidden">
+    <!-- Empty Section Start -->
+    <section id="empty_container">
       <div class="mx-auto text-center w-11/12">
         <div class="bg-[#F8F8F8] py-16 rounded-3xl font_bangla space-y-4">
           <p class="text-[#79716B] leading-6">
@@ -183,18 +183,34 @@
         </div>
       </div>
     </section>
-    <!-- Word Section End -->
+    <!-- Empty Section End -->
 
     <!-- Word Section Start -->
     <section>
       <div
-        id="level_container"
-        class="bg-[#F8F8F8] w-11/12 mx-auto rounded-3xl grid grid-cols-1 md:grid-cols-3 gap-[30px] p-[30px]"
-      >
-      
-    </div>
+        id="word_container"
+        class="bg-[#F8F8F8] w-11/12 mx-auto rounded-3xl grid grid-cols-1 md:grid-cols-3 gap-[30px] p-[30px] hidden"
+      ></div>
     </section>
     <!-- Word Section End -->
+
+    <!-- Empty Lesson Section Start -->
+    <section id="empty_lesson_container" class="hidden">
+      <div class="mx-auto text-center w-11/12">
+        <div
+          class="bg-[#F8F8F8] py-[76px] rounded-3xl font_bangla space-y-4 flex flex-col items-center"
+        >
+          <img src="./assets/alert-error.png" alt="" />
+          <p class="text-[#79716B] leading-6">
+            এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।
+          </p>
+          <h1 class="text-4xl text-[#292524] font-medium leading-10">
+            নেক্সট Lesson এ যান
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- Empty Lesson Section End -->
 
     <script src="./scripts/script.js"></script>
   </body>
