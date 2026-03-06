@@ -51,7 +51,7 @@ const removeActiveClass = () => {
 
 function pronounceWord(word) {
     const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = 'en-EN'; 
+    utterance.lang = 'en-EN';
     window.speechSynthesis.speak(utterance);
 }
 
@@ -171,7 +171,7 @@ const displayLevelWord = (words) => {
     words.forEach(word => {
         const div = document.createElement('div');
         div.innerHTML = `
-            <div class="md:w-[547px] md:p-14 bg-white rounded-lg mx-auto text-center">
+            <div class="md:w-[547px] p-7 md:p-14 bg-white rounded-lg mx-auto text-center">
           <div class="space-y-6 font_inter mt-6">
             <h1 class="text-[32px] text-[#000000] font-bold leading-6">${word.word ? word.word : 'Word not found'}</h1>
             <p class="text-xl text[#000000] font-medium leading-6">
@@ -207,11 +207,11 @@ document.getElementById('search_btn').addEventListener('click', function () {
     const url = `https://openapi.programming-hero.com/api/words/all`;
 
     fetch(url)
-        .then(response => response.json())  
+        .then(response => response.json())
         .then(json => {
             const allWords = json.data;
             const filterWords = allWords.filter(word => word.word.toLowerCase().includes(searchValue));
             displayLevelWord(filterWords);
         })
-            
+
 });
