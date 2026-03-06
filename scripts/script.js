@@ -141,7 +141,7 @@ const displayLevelWord = (words) => {
     words.forEach(word => {
         const div = document.createElement('div');
         div.innerHTML = `
-            <div class="md:w-[547px] p-10 md:p-14 bg-white rounded-lg mx-auto text-center">
+            <div class="md:w-[547px] md:p-14 bg-white rounded-lg mx-auto text-center">
           <div class="space-y-6 font_inter mt-6">
             <h1 class="text-[32px] text-[#000000] font-bold leading-6">${word.word ? word.word : 'Word not found'}</h1>
             <p class="text-xl text[#000000] font-medium leading-6">
